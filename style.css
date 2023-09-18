@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  background-color: lightgray;
+}
+
+.header {
+  width: 100%;
+  height: 23vh;
+  background-color: white;
+  text-align: center;
+}
+i {
+  font-size: 80px;
+}
+
+.header-name {
+  font-size: 30px;
+  margin: 0;
+}
+
+.icon-name {
+  padding-top: 2vh;
+}
+
+.button-container {
+  width: 100%;
+  height: 100%;
+}
+
+.add-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+}
