@@ -40,3 +40,35 @@ i {
   border-style: solid;
   font-size: 40px;
 }
+
+/* Book adding section */
+
+.adding-box {
+  border: 1px solid black;
+  width: 25em;
+  height: 25em;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  background-color: white;
+}
+
+.newBook {
+  text-align: center;
+  font-size: 27px;
+}
+
+.form {
+  text-align: center;
+}
+.add {
+  margin: 1em;
+}
+.content {
+  border: 1px solid black;
+  width: 15em;
+  height: 15em;
+  margin: 1em;
+}

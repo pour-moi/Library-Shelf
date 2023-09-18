@@ -1,3 +1,18 @@
+const addButton = document.querySelector(".add-button");
+const addingBox = document.querySelector(".adding-box");
+
+addButton.addEventListener("click", function (event) {
+  addingBox.style.display = "block";
+  event.stopPropagation();
+});
+
+document.addEventListener("click", function (event) {
+  // Check if the click event's target is inside the addingBox
+  if (!addingBox.contains(event.target)) {
+    addingBox.style.display = "none";
+  }
+});
+
 const myLibrary = [];
 
 function Book(title, author, pages) {
