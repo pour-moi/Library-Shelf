@@ -31,5 +31,12 @@ i {
   position: absolute;
   bottom: 0;
   right: 0;
-  margin: 10px;
+  margin: 0.5em;
+  background: linear-gradient(to right, blue, violet);
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border-style: solid;
+  font-size: 40px;
 }
