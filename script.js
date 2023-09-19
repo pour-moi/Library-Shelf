@@ -1,7 +1,7 @@
 const addButton = document.querySelector(".add-button");
 const addingBox = document.querySelector(".adding-box");
 const add = document.querySelector(".add");
-const content = document.querySelector(".content");
+// const content = document.querySelector(".content");
 
 const titleInput = document.querySelector(".title-input");
 const authorInput = document.querySelector(".author-input");
@@ -45,6 +45,8 @@ function addBookToLibrary(title, author, pages) {
   return newBook;
 }
 
+let parent = document.getElementById("parent");
+
 add.addEventListener("click", function (event) {
   event.preventDefault(); // Prevent the form from being submitted
   addingBox.style.display = "none";
@@ -56,7 +58,12 @@ add.addEventListener("click", function (event) {
 
   // Add the book to the library
   const newBook = addBookToLibrary(title, author, pages);
+  parent.innerHTML = "";
 
-  // Display the book information in the .content div
-  content.innerText += newBook.info() + "\n";
+  for (let i = 0; i < myLibrary.length; i++) {
+    let div = document.createElement("div");
+    div.className = "content";
+    div.innerText = myLibrary[i].info();
+    parent.appendChild(div);
+  }
 });

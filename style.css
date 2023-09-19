@@ -63,13 +63,20 @@ i {
 .form {
   text-align: center;
 }
+
 .add {
   margin: 1em;
 }
+
 .content {
   border: 1px solid black;
   width: 15em;
   height: 15em;
   margin: 1em;
   background-color: white;
+}
+
+#parent {
+  display: flex;
+  flex-wrap: wrap;
 }
